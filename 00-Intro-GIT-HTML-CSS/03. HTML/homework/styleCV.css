@@ -1,0 +1,62 @@
+html{
+  font-family: 'Montserrat', sans-serif;
+  margin: 100px;
+}
+
+p {
+  text-indent: 20px;
+}
+
+/* #divGeneral{
+  display: flex;
+  width: 1000px;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+} */
+
+#nombre{
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+
+#informacionPersonal{
+  display: flex;
+  justify-content: center; 
+  border: solid black 2px;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+#educuacionIdiomas{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  border: solid black 2px;
+  border-radius: 30px;
+}
+
+#idiomas{
+  border-left: solid black 2px;
+  padding-left: 30px;
+}
+
+#habilidades{
+  border-bottom: solid black 2px;
+  padding-bottom: 20px;
+}
+
+.cabecera{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.experiencias{
+  border: solid black 2px;
+  border-radius: 30px;
+  padding: 20px;
+  margin-bottom: 20px;
+}

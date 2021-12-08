@@ -1,0 +1,48 @@
+
+/* Elementos en General*/
+html{
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  background-image: url('https://www.fondos12.com/data/big/2/playa-minimalista-26683-2880x1800__wallpaper_480x300.jpg');
+}
+h1 {
+  color:white; 
+}
+
+.link{
+  color: gray
+}
+
+.divClass{
+  width: 500px;
+  margin: 10px;
+  padding: 50px;
+  border: 3px solid whitesmoke;
+  color: white; 
+  background-color: #313031;  
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 18px;
+}
+
+#thirdDiv {
+  display: flex;
+  justify-content: center;
+  /* height: 600px; */
+  width: 500px;
+  color: whitesmoke;
+  background: #313031; 
+  padding: 50px;
+  margin: 10px;
+  border: 3px solid whitesmoke;
+  border-radius: 18px;
+}
+#spanId {
+  margin-left: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
