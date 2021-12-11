@@ -3,18 +3,21 @@
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un array
   // Tu código:
+  return array[0]; 
 }
 
 
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
+  return array[array.length - 1]; 
 }
 
 
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
+  return array.length; 
 }
 
 
@@ -23,13 +26,25 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
-}
+  for(i = 0; i <= array.length - 1; i++) {
+    if(isNaN(array[i])) {
+      return 'Una de las entradas no es un número';
+    }
+    if(array[i] !== Math.floor(array[i])) {
+      return 'Solo debe ingresar números enteros en el array';
+    }
+    array[i] = array[i] + 1;
+  }
+  return array; 
+ }
 
 
 function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
+  array.push(elemento);
+  return array;
 }
 
 
@@ -38,6 +53,8 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
+  array.unshift(elemento);
+  return array;
 }
 
 
@@ -47,6 +64,14 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
+  var frase = palabras[0];
+  for(i_ = 1; i <= palabras.length - 1; i++) {
+    if(!isNaN(palabras[0]) || !isNaN(palabras[i])) {
+      return 'Debe ingresar un array de strings/cadenas';
+    }
+    frase = frase + ' ' + palabras[i];
+  }
+  return frase; 
 }
 
 
@@ -54,6 +79,13 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
+  var indicador = false;
+  for(let item of array) {
+    if(item === elemento) {
+      return indicador; 
+    }
+  }
+  return indicador; 
 }
 
 
